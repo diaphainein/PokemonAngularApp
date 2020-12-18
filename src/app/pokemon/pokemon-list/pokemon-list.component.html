@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>Gotta Catch 'Em All</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="pokemon-list">
+                <li *ngFor="let pokemon of pokemonList">
+                    <a href="/pokemon-card/{{pokemon.name}}">{{pokemon.name}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+

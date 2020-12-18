@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm-4">
+        <p>Name:</p>
+        <p>{{card.name}}</p>
+    </div>
+    <div class="col-sm-4">
+        <p>Weight:</p>
+        <p>{{card.weight}}</p>
+    </div>
+    <div class="col-sm-4">
+        <p>Height:</p>
+        <p>{{card.height}}</p>
+    </div>
+    <div class="col-sm-12">
+        <img [src]="card.sprites.front_default" />
+    </div>
+    <div class="col-sm-12">
+        <ul>
+            <li *ngFor="let move of card.moves">
+                {{move.move.name}}
+            </li>
+        </ul>
+    </div>
+</div>
+
