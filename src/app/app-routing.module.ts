@@ -6,7 +6,8 @@ import { ReturnToListComponent } from './pokemon/return-to-list/return-to-list.c
 
 const routes: Routes = [
   { path: 'pokemon-card/:cardName', component: ReturnToListComponent },
-  { path: 'pokemon-list', component: PokemonListComponent }
+  { path: 'pokemon-list', component: PokemonListComponent },
+  { path: '**', redirectTo: 'pokemon-list' }
 ];
 
 @NgModule({
